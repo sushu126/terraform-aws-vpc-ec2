@@ -30,10 +30,17 @@ git config --global user.email "your-email@example.com"
 
 git add .
 
+terraform-aws-vpc-ec2
+│── main.tf               # Terraform provider and VPC setup
+│── network.tf            # Subnets, Internet Gateway, NAT, Route Tables
+│── ec2.tf                # EC2 instance and security groups
+│── variables.tf          # Variables for flexibility
+│── outputs.tf            # Outputs for deployed resources
+
 
 5. Commit Changes
 
-git commit -m "Initial commit - Terraform setup for AWS VPC and EC2"
+git commit -m "any comments"
 
 
 6. Add Remote Repository
@@ -50,4 +57,3 @@ git push -u origin main
 8. Open Project in VS Code
 
 cd terraform-aws-vpc-ec2
-code .
